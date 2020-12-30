@@ -26,6 +26,14 @@
     "create": "Create New Wallet",
     "restore": "Restore Wallet"
   },
+  "mnemonicScreen": {
+    "recoveryPhrase": "Wallet Recovery Phrase",
+    "regenerate": "REGENERATE",
+    "next": "NEXT",
+    "cancel": "Cancel",
+    "writePhrase": "Please write your recovery phrase on a piece of paper and keep it in a safe place",
+    "loseRecovery": "If you lose your recovery phrase, your wallet cannot be recovered!"
+  },
   "storybook": {
     "placeholder": "Placeholder",
     "field": "Field"

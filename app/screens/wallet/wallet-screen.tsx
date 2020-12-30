@@ -6,8 +6,7 @@ import { Button, Header, Screen, Text, Wallpaper } from "../../components"
 // import { useNavigation } from "@react-navigation/native"
 // import { useStores } from "../../models"
 import { color, spacing, typography } from "../../theme"
-const logo = require("./logo.png")
-
+const logo = require("../../../assets/logo.png")
 
 const FULL: ViewStyle = { flex: 1 }
 const CONTAINER: ViewStyle = {
@@ -89,8 +88,7 @@ export const WalletScreen = observer(function WalletScreen() {
   // const navigation = useNavigation()
   const navigation = useNavigation()
   const nextScreen = () => navigation.navigate("welcome")
-  const demoNavigation = useNavigation();
-  const nextDemoScreen = () => navigation.navigate("demo")
+  const mnemonicScreen = () => navigation.navigate("mnemonic")
 
   return (
     <View testID="WalletScreen" style={FULL}>
@@ -114,7 +112,7 @@ export const WalletScreen = observer(function WalletScreen() {
           style={CONTINUE}
           textStyle={CONTINUE_TEXT}
           tx="walletScreen.restore"
-          onPress={nextDemoScreen}
+          onPress={mnemonicScreen}
         />
       </Screen>
     </View>
